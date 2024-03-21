@@ -99,6 +99,7 @@ style: const TextStyle(color: Colors.white),
                       decoration:  const InputDecoration(label:  Text("Password",style: TextStyle(color: Colors.white),),
                       prefixIcon:  Icon(Icons.lock,color: Colors.white,)),
                     ),
+                  const SizedBox(height: 10,),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent,
                       foregroundColor: Colors.white,

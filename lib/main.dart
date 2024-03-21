@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:reposight/firebase_options.dart';
 import 'package:reposight/provider/auth_provider.dart';
 import 'package:reposight/screens/auth_screen.dart';
-import 'package:reposight/screens/signup.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
