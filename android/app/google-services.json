@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "928370711567",
+    "project_id": "reposight-a7308",
+    "storage_bucket": "reposight-a7308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928370711567:android:26c9ff1efce2d23f28577a",
+        "android_client_info": {
+          "package_name": "com.example.reposight"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsKph2fVCC6WLYMGM2gwghPsS51nHygX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
