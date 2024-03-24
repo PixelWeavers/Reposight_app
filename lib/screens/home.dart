@@ -15,7 +15,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: IssuesView(),
-      bottomNavigationBar: BottomNavigationBar(items: items),
     );
   }
 }

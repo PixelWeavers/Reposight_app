@@ -1,10 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:reposight/firebase_options.dart';
 import 'package:reposight/provider/auth_provider.dart';
 import 'package:reposight/screens/auth_screen.dart';
-import 'package:reposight/screens/home.dart';
-import 'package:reposight/screens/issues_main_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,10 +22,6 @@ void main() async {
   );
 }
 
-void main() {
-  runApp(MyApp());
-}
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -40,8 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
-      routes: {},
+      home: AuthScreen(),
     );
   }
 }
