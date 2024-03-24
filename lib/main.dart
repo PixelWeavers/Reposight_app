@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:reposight/provider/auth_provider.dart';
 import 'package:reposight/screens/auth_screen.dart';
 import 'package:reposight/screens/home.dart';
+import 'package:reposight/screens/issues_main_screen.dart';
 
 // void main() async {
 //   WidgetsFlutterBinding.ensureInitialized();
