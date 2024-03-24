@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:reposight/screens/issues_main_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,16 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Row(mainAxisAlignment:MainAxisAlignment.start, 
-        children: [
-          Image.asset('assets/reposight_logo.jpg',
-          fit: BoxFit.contain,
-          height: 50,)
-        ],) ,
-      ),
-      body: const Text("Welcome to home page"),
+      body: IssuesView(),
     );
   }
 }
