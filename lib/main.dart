@@ -6,22 +6,22 @@ import 'package:reposight/screens/auth_screen.dart';
 import 'package:reposight/screens/home.dart';
 import 'package:reposight/screens/issues_main_screen.dart';
 
-// void main() async {
-//   WidgetsFlutterBinding.ensureInitialized();
-//   try {
-//     await Firebase.initializeApp(
-//       options: DefaultFirebaseOptions.currentPlatform,
-//     );
-//   } catch (e) {
-//     print('Error initializing Firebase: $e');
-//   }
-//   runApp(
-//     MultiProvider(
-//       providers: [ChangeNotifierProvider(create: (_) => AuthProvider())],
-//       child: const MyApp(),
-//     ),
-//   );
-// }
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  } catch (e) {
+    print('Error initializing Firebase: $e');
+  }
+  runApp(
+    MultiProvider(
+      providers: [ChangeNotifierProvider(create: (_) => AuthProvider())],
+      child: const MyApp(),
+    ),
+  );
+}
 
 void main() {
   runApp(MyApp());
@@ -41,6 +41,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: HomeScreen(),
+      routes: {},
     );
   }
 }
