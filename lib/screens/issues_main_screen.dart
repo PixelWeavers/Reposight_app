@@ -10,7 +10,8 @@ CustomScrollView issuesView(BuildContext context) {
       SliverAppBar(
         backgroundColor: Colors.black,
         pinned: true,
-        expandedHeight: 130,
+        centerTitle: true,
+        expandedHeight: 140,
         collapsedHeight: 70,
         floating: true,
         flexibleSpace: FlexibleSpaceBar(
@@ -41,18 +42,7 @@ CustomScrollView issuesView(BuildContext context) {
         ),
       ),
       SliverAnimatedList(
-        itemBuilder: (context, index, animation) => Container(
-          height: 300,
-          width: 200,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20), color: Colors.white),
-          margin: EdgeInsets.all(20),
-          alignment: Alignment.center,
-          child: Text(
-            'Item $index',
-            style: TextStyle(fontSize: 24),
-          ),
-        ),
+        itemBuilder: (context, index, animation) => testCard,
         initialItemCount: 50,
       ),
     ],
@@ -64,13 +54,15 @@ Card issueCard(
     String issueName, String issueRepo, IssueStatus status, String issueNum,
     {bool isSelected = false}) {
   return Card(
+    margin: EdgeInsets.all(20),
+    elevation: 2,
     shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: BorderSide(
-            color: Colors.white,
-            strokeAlign: BorderSide.strokeAlignOutside,
+            color: Color.fromARGB(255, 85, 84, 84),
             style: BorderStyle.solid,
-            width: 5)),
+            width: 7)),
+    child: Container(height: 150, width: 230),
   );
 }
 
