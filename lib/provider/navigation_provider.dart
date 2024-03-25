@@ -1,4 +1,7 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 class BottomNavItemClass {
   final String title;
@@ -12,10 +15,7 @@ class BottomNavItemClass {
   });
 }
 
-  
-
-// IconButton BottomNavItem(BottomNavItemClass item){
-//   return IconButton(onPressed: (){
-
-//   }, icon: icon)
-// }
+class NavigationProvider extends ChangeNotifier {
+  int? _currentIndex = 0;
+  int? get currentIndex => _currentIndex;
+}
